@@ -4,6 +4,7 @@
 ---------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
 
 /*keyframes.cssの読み込み
 ---------------------------------------------------------------------------*/
@@ -14,12 +15,18 @@
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
+/* 1px = 0.01remに変換（100px = 1rem）*/
+html {
+	font-size: min(6.51042vw, 70px);
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	color: #333; /*全体の文字色*/
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
-		Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
+	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+		"hippori Mincho", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;  */
+	font-family: "Shippori Mincho";
 	font-size: 16px; /*文字サイズ*/
 	line-height: 2; /*行間*/
 	background: #fafafa; /*背景色*/
@@ -111,21 +118,52 @@ header #logo {
 	display: none; /*スライドショーの邪魔なので非表示に*/
 }
 
-.header_keyv {
-	z-index: 10;
-	position: absolute;
+.main_logo {
+	width: 2rem;
+	height: auto;
+	/* border: 1px solid #0c6b41; */
+	border-radius: 50%;
+}
+
+.page_title_container {
+	width: 11rem;
+	height: 9rem;
 	text-align: center;
+	border-radius: 10px;
+	/* background: white; */
+	padding: 0.2rem;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 30px;
-	color: white;
-	text-shadow: #666 2px 2px 2px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	z-index: 2;
+	/* border: #0c6b41 0.1rem solid; */
 }
 
-.header_keyv > h2 {
-	font-size: 18px;
-	margin-top: 20px;
+.page_title {
+	font-size: 0.8rem;
+	margin-top: 0.4rem;
+	font-weight: 700;
+	color: #0c6b41;
+	text-shadow: white 1px 1px 1px;
+}
+
+.page_subtitle {
+	color: white;
+	text-shadow: #ccc 1px 1px 1px;
+	margin-top: 0.5rem;
+	font-size: 0.6rem;
+}
+
+.loop_wrap {
+	width: auto;
+}
+
+.loop_wrap img {
+	margin-top: 0.5rem;
+	height: 1.5rem;
 }
 
 /*メインメニューのブロック
@@ -187,13 +225,9 @@ header #logo {
 	left: 0px;
 	width: 94%;
 	padding: 50px 3%;
-	background: #000; /*背景色。古いブラウザ用。*/
-	background: rgba(
-		0,
-		0,
-		0,
-		0.85
-	); /*背景色。0,0,0は黒のことで0.85は色が85%出た状態のこと。*/
+	background: #0c6b41; /*背景色。古いブラウザ用。*/
+	background: rgba(0, 0, 0, 0.85);
+	/*背景色。0,0,0は黒のことで0.85は色が85%出た状態のこと。*/
 	text-align: center; /*テキストをセンタリング*/
 	border-bottom: 1px solid #fff; /*境界が見辛いので、下線の設定。*/
 }
@@ -388,15 +422,13 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 .btn1 a {
 	display: block;
 	text-decoration: none;
-	border: 1px solid #fff; /*枠線の幅、線種、色*/
 	text-align: center; /*テキストをセンタリング*/
-	padding: 10px 30px; /*上下、左右へのボタン内の余白*/
-	margin: 40px auto 0; /*上、左右、下へのボックスの外側への余白*/
+	margin: 0.4rem auto; /*上、左右、下へのボックスの外側への余白*/
 }
 /*ボタンのマウスオン時（共通）*/
 .btn1 a:hover {
 	background: #fff; /*背景色*/
-	color: #000 !important; /*文字色*/
+	color: #0c6b41 !important; /*文字色*/
 }
 
 /*list-column（トップページで使っている３列ブロック）
@@ -414,19 +446,18 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	flex-direction: column; /*中のブロックを並べる向きの指定。これは縦に並べる意味。*/
 	width: 32%; /*ブロック幅*/
 	margin-bottom: 20px; /*ブロックの下に空ける余白*/
-	background: #000; /*背景色*/
-	color: #fff; /*文字色*/
+	border: #0c6b41 1px solid;
 	border-radius: 5px; /*角丸の指定。ほんの少し角が丸くなります。*/
 	overflow: hidden; /*角丸から内容が飛び出ないよう、飛び出た部分を非表示にする指定*/
 }
 /*リンクテキストの文字色*/
 #contents .list-column a {
-	color: #fff;
 }
 /*ボックス内のh4（見出し）タグ*/
 #contents .list-column h4 {
+	text-align: center;
 	margin-bottom: 20px; /*下のテキストとの間に空けるスペース*/
-	font-size: 140%; /*文字サイズ*/
+	font-size: 0.5rem; /*文字サイズ*/
 }
 /*ボックス内のp（段落）タグ*/
 #contents .list-column p {
@@ -438,6 +469,13 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	padding: 5%; /*ブロック内の余白*/
 	flex: 1 0 auto;
 }
+
+@media screen and (max-width: 480px) {
+	#contents .list-column .text > p {
+		display: none;
+	}
+}
+
 /*IEバグ対応*/
 #contents .list-column figure {
 	min-height: 0%;
@@ -450,7 +488,7 @@ footer {
 	position: relative;
 	z-index: 1;
 	font-size: 80%; /*文字サイズ*/
-	background: #222; /*背景色*/
+	background: #0c6b41; /*背景色*/
 	color: #ccc; /*文字色*/
 	text-align: center;
 }
@@ -501,7 +539,7 @@ footer .pr {
 #copyright {
 	clear: both;
 	text-align: center;
-	background: #000; /*背景色*/
+	background: #0c6b41; /*背景色*/
 	padding: 20px 0; /*上下、左右へのボックス内の余白*/
 }
 #copyright a {
@@ -530,17 +568,18 @@ ul.icon img:hover {
 ---------------------------------------------------------------------------*/
 /*見出しを含まないお知らせブロック*/
 #new dl {
-	padding: 0px 20px; /*上下、左右へのブロック内の余白*/
+	font-size: 0.4rem;
+	padding: 0px 2.5rem; /*上下、左右へのブロック内の余白*/
 }
 /*日付設定*/
 #new dt {
 	float: left;
-	width: 9em; /*幅*/
+	width: 3rem; /*幅*/
 	letter-spacing: 0.1em;
 }
 /*記事設定*/
 #new dd {
-	padding-left: 9em;
+	padding-left: 0.2rem;
 }
 
 /*ta1設定
@@ -834,15 +873,21 @@ p.look {
 	#menubar_hdr.open {
 		width: 50px; /*幅*/
 		height: 50px; /*高さ*/
-		border: 1px solid #fff;
+		border: 2px solid #fff;
 	}
 	/*三本バーアイコン*/
 	#menubar_hdr.close {
-		background: #000 url(../images/icon_menu.png) no-repeat center top/50px; /*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
+		transition: 0.5s;
+		border-radius: 4px;
+		background: #0c6b41 url(../images/icon_menu.png) no-repeat center top/50px;
 	}
 	/*閉じるアイコン*/
 	#menubar_hdr.open {
-		background: #000 url(../images/icon_menu.png) no-repeat center bottom/50px; /*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
+		transition: 0.5s;
+		border-radius: 4px;
+		background: #333 url(../images/icon_menu.png) no-repeat center bottom/50px; /*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
+
+		/*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
 	}
 
 	/*fixmenu設定（メニューが画面上部に到達した際のスタイル）
