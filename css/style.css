@@ -119,7 +119,7 @@ header #logo {
 }
 
 .main_logo {
-	width: 2rem;
+	width: 3rem;
 	height: auto;
 	/* border: 1px solid #0c6b41; */
 	border-radius: 50%;
@@ -133,7 +133,7 @@ header #logo {
 	/* background: white; */
 	padding: 0.2rem;
 	position: absolute;
-	top: 60%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
@@ -143,16 +143,16 @@ header #logo {
 }
 
 .page_title {
-	font-size: 0.8rem;
+	font-size: 1rem;
 	margin-top: 0.4rem;
 	font-weight: 700;
 	color: #0c6b41;
-	text-shadow: white 1px 1px 1px;
+	text-shadow: white 0.01rem 0.01rem;
 }
 
 .page_subtitle {
 	color: white;
-	text-shadow: #ccc 1px 1px 1px;
+	text-shadow: #666 0.01rem 0.01rem;
 	margin-top: 0.5rem;
 	font-size: 0.6rem;
 }
@@ -446,7 +446,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	flex-direction: column; /*中のブロックを並べる向きの指定。これは縦に並べる意味。*/
 	width: 32%; /*ブロック幅*/
 	margin-bottom: 20px; /*ブロックの下に空ける余白*/
-	border: #0c6b41 1px solid;
+	border: #ccc 1px solid;
 	border-radius: 5px; /*角丸の指定。ほんの少し角が丸くなります。*/
 	overflow: hidden; /*角丸から内容が飛び出ないよう、飛び出た部分を非表示にする指定*/
 }
