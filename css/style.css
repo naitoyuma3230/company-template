@@ -77,6 +77,14 @@ iframe {
 	width: 100%;
 }
 
+hr {
+	height: 1px;
+	background-color: #0c6b41;
+	border: none;
+	color: #0c6b41;
+	width: 2.5rem;
+}
+
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {
@@ -170,6 +178,7 @@ header #logo {
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
 #menubar {
+	transition: 0.5s;
 	position: relative;
 	z-index: 10;
 	text-align: center; /*文字を中央に*/
@@ -201,7 +210,8 @@ header #logo {
 /*スマホ用メニューを表示させない*/
 #menubar-s,
 #menubar-s2 {
-	display: none;
+	/* display: none; */
+	opacity: 1;
 }
 
 /*３本バーアイコンを表示させない*/
@@ -322,7 +332,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	clear: both;
 	margin-bottom: 30px;
 	font-size: 150%; /*文字サイズ*/
-	border-bottom: 1px solid #ccc; /*下線の幅、線種、色*/
+	border-bottom: 1px solid #0c6b41; /*下線の幅、線種、色*/
 	padding-left: 3%; /*左側に空ける余白*/
 	letter-spacing: 0.1em; /*文字間隔を少し広めにとる指定。通常がいいならこの１行削除。*/
 }
@@ -457,7 +467,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 #contents .list-column h4 {
 	text-align: center;
 	margin-bottom: 20px; /*下のテキストとの間に空けるスペース*/
-	font-size: 0.5rem; /*文字サイズ*/
+	font-size: 0.4rem; /*文字サイズ*/
 }
 /*ボックス内のp（段落）タグ*/
 #contents .list-column p {
@@ -470,7 +480,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	flex: 1 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
 	#contents .list-column .text > p {
 		display: none;
 	}
@@ -568,8 +578,9 @@ ul.icon img:hover {
 ---------------------------------------------------------------------------*/
 /*見出しを含まないお知らせブロック*/
 #new dl {
+	width: 12rem;
 	font-size: 0.4rem;
-	padding: 0px 2.5rem; /*上下、左右へのブロック内の余白*/
+	margin: 0px auto; /*上下、左右へのブロック内の余白*/
 }
 /*日付設定*/
 #new dt {
@@ -579,7 +590,7 @@ ul.icon img:hover {
 }
 /*記事設定*/
 #new dd {
-	padding-left: 0.2rem;
+	/* padding-left: 0.2rem; */
 }
 
 /*ta1設定
