@@ -480,12 +480,6 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	flex: 1 0 auto;
 }
 
-@media screen and (max-width: 560px) {
-	#contents .list-column .text > p {
-		display: none;
-	}
-}
-
 /*IEバグ対応*/
 #contents .list-column figure {
 	min-height: 0%;
