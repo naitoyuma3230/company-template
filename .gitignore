@@ -1,0 +1,4 @@
+# tempディレクトリを無視する
+/node_modules/
+# tempディレクトリを無視する
+/temp/
