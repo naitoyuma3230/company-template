@@ -2,6 +2,11 @@
   justify-content: start;
 }
 @media screen and (max-width: 620px) {
+  #contents .list-column-container .list-column h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
   #contents .list-column-container {
     display: inline;
   }
@@ -31,4 +36,86 @@
 #contents .about-name .daihyo {
   font-size: 0.2rem;
   margin-right: 0.4rem;
+}
+#contents h2 {
+  font-size: 200%;
+}
+.footer {
+  width: auto;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.footer__nav {
+  margin: 20px auto;
+}
+.footer__nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer__nav ul li {
+  margin-right: 10px;
+}
+.footer__nav ul li a {
+  text-decoration: none;
+}
+.base-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+:.base-info__logo img {
+  width: 100px;
+}
+.base-info__text {
+  text-align: left;
+  margin-left: 10px;
+}
+.map {
+  width: auto;
+  height: 300px;
+  background: #ccc;
+}
+.btn_cnt a {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 240px;
+  background-color: #1bd;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  line-height: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  clear: both;
+  font-weight: bold;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.btn_cnt a:hover {
+  opacity: 0.5;
+}
+.contact-text__tell {
+  text-align: center;
+  margin: 0 auto;
+}
+.contact-text__tell a {
+  color: #09c;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  transition: 0.2s linear;
+  font-size: 24px;
+  text-decoration: none;
+}
+.contact-text__tell a:hover {
+  opacity: 0.5;
 }
