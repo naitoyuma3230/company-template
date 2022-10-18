@@ -49,9 +49,9 @@
 .container::after {
 	content: "";
 	position: absolute;
-	width: 25px;
-	height: 25px;
-	right: -17px;
+	width: 20px;
+	height: 20px;
+	right: -14px;
 	background-color: white;
 	border: 4px solid #ccc;
 	top: 15px;
@@ -103,12 +103,12 @@
 
 /* Fix the circle for containers on the right side */
 .right::after {
-	left: -16px;
+	left: -14px;
 }
 
 /* The actual content */
 .content {
-	padding: 20px;
+	padding: 10px;
 	background-color: white;
 	position: relative;
 	border-radius: 6px;
@@ -138,7 +138,7 @@
 	/* Make sure all circles are at the same spot */
 	.left::after,
 	.right::after {
-		left: 15px;
+		left: 17px;
 	}
 
 	/* Make all right containers behave like the left ones */
