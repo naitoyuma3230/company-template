@@ -9,8 +9,6 @@ section {
   justify-content: center;
 }
 #contents .list-column-container .list-column {
-  background: #000;
-  color: #fff;
   width: 48%;
   margin: 2px;
 }
@@ -18,6 +16,11 @@ section {
   #contents .list-column-container .list-column h4 {
     font-size: 16px;
   }
+}
+#contents .list-column-container .list-column img {
+  object-fit: cover;
+  width: 100%;
+  height: 4rem;
 }
 @media screen and (max-width: 620px) {
   #contents .list-column-container {
@@ -27,8 +30,6 @@ section {
     width: 100%;
   }
   #contents .list-column-container .list-column img {
-    object-fit: cover;
-    width: 100%;
     height: 7rem;
   }
 }
@@ -209,9 +210,7 @@ section {
 }
 .work-list figure {
   width: 50%;
-}
-.work-list figure img {
-  height: 100%;
+img
 }
 .insta-box {
   display: flex;
@@ -236,6 +235,5 @@ section {
   overflow: hidden;
 }
 .work-img__img-box img {
-  height: 100%;
-  width: 100%;
+  object-fit: cover;
 }
