@@ -1,5 +1,18 @@
+section {
+  margin: 80px 0;
+}
+#contents {
+  max-width: 1000px !important;
+  margin: 0 auto;
+}
 #contents .list-column-container {
-  justify-content: start;
+  justify-content: center;
+}
+#contents .list-column-container .list-column {
+  background: #000;
+  color: #fff;
+  width: 48%;
+  margin: 2px;
 }
 @media screen and (max-width: 620px) {
   #contents .list-column-container .list-column h4 {
@@ -69,8 +82,8 @@
   font-size: 16px;
   margin-bottom: 20px;
 }
-:.base-info__logo img {
-  width: 100px;
+.base-info__logo img {
+  width: 70px;
 }
 .base-info__text {
   text-align: left;
@@ -118,4 +131,111 @@
 }
 .contact-text__tell a:hover {
   opacity: 0.5;
+}
+.myfc__img {
+  width: 30%;
+  margin: 0 auto;
+}
+.myfc__img img {
+  display: block;
+  margin: 0 auto;
+}
+.myfc__text {
+  text-align: center;
+}
+.company-table {
+  margin: 0 auto;
+}
+.company-table tr {
+  border-bottom: 1px solid #b5b1b1;
+}
+.company-table th,
+.company-table td {
+  text-align: center;
+  padding: 24px 0;
+  border: none;
+  font-size: 18px;
+}
+@media screen and (min-width: 770px) {
+  .company-table th,
+  .company-table td {
+    font-size: 20px;
+  }
+}
+.company-table th {
+  width: 30%;
+}
+.company-table__address {
+  text-align: left;
+  margin-bottom: px;
+}
+@media screen and (max-width: 620px) {
+  .company-table__address {
+    font-size: 14px;
+  }
+}
+.company-table__address span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.company-table__name-box {
+  text-align: center;
+}
+.work-list-item {
+  margin-bottom: 40px;
+}
+.work-list-item h3 {
+  font-weight: bold;
+  margin: 0 3%;
+}
+.work-list {
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  background: #000;
+  color: #fff;
+  margin: 0 3% 10px;
+}
+.work-list__text {
+  width: 50%;
+  padding: 10px;
+}
+.work-list__text h4 {
+  padding: 8px 0;
+  font-size: 18px;
+}
+.work-list__text p {
+  padding: 0 !important;
+}
+.work-list figure {
+  width: 50%;
+}
+.work-list figure img {
+  height: 100%;
+}
+.insta-box {
+  display: flex;
+  padding: 0 3%;
+  justify-content: center;
+  overflow: hidden;
+}
+.work-img {
+  display: flex;
+  max-height: 200px;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  color: #fff;
+  margin: 0 3% 80px;
+}
+.work-img.pb-none {
+  margin-bottom: 0;
+}
+.work-img__img-box {
+  overflow: hidden;
+}
+.work-img__img-box img {
+  height: 100%;
+  width: 100%;
 }

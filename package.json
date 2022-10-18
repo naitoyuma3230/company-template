@@ -1,8 +1,14 @@
 {
 	"dependencies": {
+		"stylint": "^0.6.3",
 		"stylus": "^0.59.0"
 	},
 	"scripts": {
-		"stylus": "stylus -w css/add.styl"
+		"stylus": "stylus -w css/add.styl",
+		"lint": "stylelint --fix **/*.{css,scss,styl}"
+	},
+	"devDependencies": {
+		"stylelint": "^14.14.0",
+		"stylelint-config-standard": "^29.0.0"
 	}
 }

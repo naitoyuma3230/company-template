@@ -127,15 +127,14 @@ header #logo {
 }
 
 .main_logo {
-	width: 3rem;
+	width: 2.5rem;
 	height: auto;
 	/* border: 1px solid #0c6b41; */
 	border-radius: 50%;
 }
 
 .page_title_container {
-	width: 11rem;
-	height: 9rem;
+	width: 12rem;
 	text-align: center;
 	border-radius: 10px;
 	/* background: white; */
@@ -883,8 +882,9 @@ p.look {
 	/*三本バーアイコン*/
 	#menubar_hdr.close {
 		transition: 0.5s;
-		border-radius: 4px;
+		border-radius: 50%;
 		background: #0c6b41 url(../images/icon_menu.png) no-repeat center top/50px;
+		opacity: 0.6;
 	}
 	/*閉じるアイコン*/
 	#menubar_hdr.open {
