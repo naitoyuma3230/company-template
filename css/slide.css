@@ -63,27 +63,6 @@
 	}
 }
 
-@keyframes slide4 {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 0;
-	}
-	60% {
-		opacity: 1;
-	}
-	75% {
-		opacity: 1;
-	}
-	85% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
 /*mainimg
 ---------------------------------------------------------------------------*/
 #mainimg {
@@ -104,7 +83,7 @@
 	width: 100%;
 	height: auto;
 	animation-fill-mode: both; /*アニメーションの待機中は最初のキーフレームを維持、終了後は最後のキーフレームを維持。*/
-	animation-delay: 2s; /*出現するタイミング（秒後）*/
+	animation-delay: 1s;
 }
 .slide0 {
 	position: relative;
@@ -120,8 +99,4 @@
 }
 .slide3 {
 	animation-name: slide3;
-}
-
-.slide4 {
-	animation-name: slide4;
 }
