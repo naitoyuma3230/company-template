@@ -134,19 +134,20 @@ header #logo {
 }
 
 .page_title_container {
-	width: 12rem;
 	text-align: center;
 	border-radius: 10px;
 	/* background: white; */
 	padding: 0.2rem;
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
+	/* position: absolute; */
+	bottom: 0;
+	right: 0;
 	z-index: 2;
 	/* border: #0c6b41 0.1rem solid; */
+}
+
+.page_title_container img {
+	width: 40%;
+	height: auto;
 }
 
 .page_title {

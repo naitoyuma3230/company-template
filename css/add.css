@@ -1,6 +1,20 @@
 section {
   margin: 80px 0;
 }
+.top-logo {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  margin: 5%;
+  border-radius: 10px;
+}
+.top-image-container {
+  width: 100%;
+  overflow: hidden;
+}
 #contents {
   max-width: 1000px !important;
   margin: 0 auto;
