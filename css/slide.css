@@ -63,6 +63,27 @@
 	}
 }
 
+@keyframes slide4 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 1;
+	}
+	85% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 /*mainimg
 ---------------------------------------------------------------------------*/
 #mainimg {
@@ -73,7 +94,8 @@
 
 .slide1,
 .slide2,
-.slide3 {
+.slide3,
+.slide4 {
 	animation-duration: 15s; /*アニメーションを実行する時間。「s」は秒の事。*/
 	animation-iteration-count: infinite;
 	position: absolute;
@@ -98,4 +120,8 @@
 }
 .slide3 {
 	animation-name: slide3;
+}
+
+.slide4 {
+	animation-name: slide4;
 }
