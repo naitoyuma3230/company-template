@@ -23,7 +23,14 @@ section {
 }
 .top-image-container {
   width: 100%;
+  max-width: 800px;
   overflow: hidden;
+  margin: 0 auto;
+}
+@media screen and (min-width: 770px) {
+  .top-image-container {
+    border-radius: 14px;
+  }
 }
 #contents {
   max-width: 1000px !important;

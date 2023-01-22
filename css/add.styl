@@ -42,26 +42,11 @@ section
 
 .top-image-container
   width: 100%
+  max-width :800px
   overflow: hidden
-  // &::before, &::after
-  //   content: "";
-  //   width: 4rem;
-  //   height: 100px;
-  //   display:block;
-  //   background: #fff;
-  //   position: absolute;
-  //   z-index: 1;
-  // &::before
-  //   transform: rotate(30deg);
-  //   border-top: 1px solid #aaa;
-  //   bottom:-70px;
-  //   left:-70px;
-  // &::after
-  //   transform: rotate(-30deg);
-  //   border-top: 1px solid #aaa;
-  //   bottom:-70px;
-  //   right:-70px;
-
+  margin: 0 auto
+  +md()
+   border-radius: 14px
 
 #contents
   max-width: 1000px !important
